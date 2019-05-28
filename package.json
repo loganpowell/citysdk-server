@@ -1,0 +1,33 @@
+{
+  "name": "citysdk-server",
+  "version": "1.0.0",
+  "description": "CitySDK wrapped as a (micro) API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loganpowell/citysdk-server.git"
+  },
+  "keywords": [
+    "citysdk",
+    "census",
+    "microservice",
+    "API",
+    "goverment",
+    "\"open",
+    "data\""
+  ],
+  "author": "Logan Powell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loganpowell/citysdk-server/issues"
+  },
+  "homepage": "https://github.com/loganpowell/citysdk-server#readme",
+  "dependencies": {
+    "citysdk": "^2.0.27",
+    "micro": "^9.3.4"
+  }
+}
