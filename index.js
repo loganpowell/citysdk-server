@@ -9,6 +9,21 @@ const {
 /*
 Stress test:
 curl -d "{\"vintage\":\"2017\",\"geoHierarchy\":{\"zip code tabulation area\":\"*\"},\"sourcePath\":[\"acs\",\"acs5\"],\"values\":[\"B19083_001E\"],\"geoResolution\":\"500k\"}" -H "Content-Type: application/json" -X POST https://citysdk-responsible-hippopotamus.app.cloud.gov
+
+changing target on cloud.gov:
+cf t -o cloud-gov -s census-test
+cf t (target) -o <organization> -s <space>
+
+create random route (alias):
+cf push citysdk --random-route
+
+scale app:
+cf scale citysdk -m 4096M
+
+
+Once target is set and alias (--random-route) - if neccessary - defined, push the current (within root dir) project:
+cf push citysdk
+
  */
 
 const { router, post} = require('microrouter')
