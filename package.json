@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/loganpowell/citysdk-server#readme",
   "dependencies": {
-    "citysdk": "^2.0.27",
+    "citysdk": "^2.0.28",
     "micro": "^9.3.4",
     "microrouter": "^3.1.3"
   },

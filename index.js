@@ -6,6 +6,11 @@ const {
   sendError
 } = micro
 
+/*
+Stress test:
+curl -d "{\"vintage\":\"2017\",\"geoHierarchy\":{\"zip code tabulation area\":\"*\"},\"sourcePath\":[\"acs\",\"acs5\"],\"values\":[\"B19083_001E\"],\"geoResolution\":\"500k\"}" -H "Content-Type: application/json" -X POST https://citysdk-responsible-hippopotamus.app.cloud.gov
+ */
+
 const { router, post} = require('microrouter')
 
 const PORT = process.env.PORT || 8080
